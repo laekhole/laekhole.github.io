@@ -26,6 +26,8 @@ h1, h2, h3, h4, p, dl, dd, ul, ol, figure { margin: 0; }
 ul, ol { padding: 0; }
 a { color: var(--accent); text-underline-offset: 3px; }
 img { max-width: 100%; height: auto; display: block; }
+/* a phrase that moves to the next line whole instead of breaking mid-phrase */
+.nw { display: inline-block; }
 
 .skip { position: absolute; left: -999px; top: 8px; padding: 8px 12px; background: var(--ink); color: #fff; border-radius: 6px; z-index: 30; }
 .skip:focus { left: 8px; }
