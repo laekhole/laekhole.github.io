@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <rect width="480" height="280" fill="#eef2ef"/>
+  <!-- ERP window -->
+  <rect x="26" y="34" width="250" height="212" rx="12" fill="#ffffff" stroke="#cbd6cf" stroke-width="1.5"/>
+  <rect x="26" y="34" width="250" height="30" rx="12" fill="#20272b"/>
+  <rect x="26" y="50" width="250" height="14" fill="#20272b"/>
+  <g fill="#6f8a7d"><circle cx="44" cy="49" r="4"/><circle cx="58" cy="49" r="4"/><circle cx="72" cy="49" r="4"/></g>
+  <text x="258" y="54" font-size="11" font-weight="700" text-anchor="end" fill="#dfe8e3">총무</text>
+  <g font-size="13" font-weight="700" text-anchor="middle" fill="#20272b">
+    <rect x="42" y="80" width="106" height="70" rx="10" fill="#f2efe8" stroke="#26706c" stroke-width="1.5"/><text x="95" y="120">구내식당</text>
+    <rect x="154" y="80" width="106" height="70" rx="10" fill="#26706c"/><text x="207" y="120" fill="#ffffff">출입증</text>
+    <rect x="42" y="160" width="106" height="70" rx="10" fill="#f2efe8" stroke="#26706c" stroke-width="1.5"/><text x="95" y="200">연구관리</text>
+    <rect x="154" y="160" width="106" height="70" rx="10" fill="#f2efe8" stroke="#26706c" stroke-width="1.5"/><text x="207" y="200">배차관리</text>
+  </g>
+  <!-- link -->
+  <path d="M262 115h62" stroke="#26706c" stroke-width="3" stroke-dasharray="7 6"/>
+  <path d="M320 106l12 9-12 9" fill="none" stroke="#26706c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- access gate -->
+  <rect x="344" y="70" width="108" height="90" rx="10" fill="#ffffff" stroke="#cbd6cf" stroke-width="1.5"/>
+  <g fill="none" stroke="#20272b" stroke-width="3" stroke-linecap="round">
+    <path d="M370 136v-40M426 136v-40"/><path d="M370 108h22M426 108h-22"/>
+  </g>
+  <text x="398" y="152" font-size="11" font-weight="700" text-anchor="middle" fill="#20272b">출입통제</text>
+  <!-- Oracle procedure -->
+  <ellipse cx="398" cy="190" rx="46" ry="12" fill="#26706c"/>
+  <path d="M352 190v38c0 7 21 12 46 12s46-5 46-12v-38" fill="#a9cdc4"/>
+  <text x="398" y="224" font-size="11" font-weight="700" text-anchor="middle" fill="#20272b">프로시저</text>
+  <path d="M398 160v16" stroke="#26706c" stroke-width="2.5"/>
+</svg>
