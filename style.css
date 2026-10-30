@@ -181,3 +181,60 @@ dd > .mini + .mini { margin-top: 4px; }
   html { scroll-behavior: auto; }
   .gallery a { transition: none; }
 }
+
+/* print and PDF (A4): undo the narrow-screen layout and keep cards whole across pages */
+@page {
+  size: A4;
+  margin: 14mm 13mm 16mm;
+  @bottom-right { content: counter(page) " / " counter(pages); color: #616d73; font: 8pt "Noto Sans KR", sans-serif; }
+}
+@media print {
+  body { font-size: 13px; line-height: 1.6; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .skip, .top, .intro-links { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  .intro { padding: 0 0 8px; background: none; }
+  .intro-grid { grid-template-columns: 150px 1fr; gap: 30px; }
+  .photo img { width: 150px; box-shadow: none; }
+  .intro h1 { font-size: 28px; }
+  .list-title { margin-top: 26px; }
+  .career { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .career > li { padding: 12px 14px; }
+  .co { display: block; margin-left: 0; }
+  .section { padding: 26px 0 0; }
+  .section.tint { background: none; }
+  .sec-title { margin-bottom: 16px; font-size: 21px; break-after: avoid; }
+  .strengths { gap: 12px; }
+  .strength { padding: 16px; }
+  .strength h3 { font-size: 16px; }
+  .strength p { font-size: 13px; }
+  .skills dt, .skills dd { padding: 9px 0; }
+  .skills dt { padding-top: 13px; }
+  .chips li { padding: 4px 10px 4px 7px; font-size: 12.5px; }
+  .chips img { width: 18px; height: 18px; }
+  .legend { margin: -8px 0 14px; }
+  .gallery { grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 8px; }
+  .g-no { margin: 8px 10px 0; font-size: 11px; }
+  .gallery strong { margin: 2px 10px 0; font-size: 12.5px; line-height: 1.45; }
+  .badge { margin: 6px 10px 10px; font-size: 11px; }
+  .project { display: flow-root; padding: 16px 0; break-inside: avoid; }
+  .p-visual { position: static; display: block; float: left; width: 176px; margin: 0 20px 8px 0; }
+  .p-visual > img, .app-show { width: 100%; max-width: none; }
+  .p-visual .tag { margin-bottom: 8px; font-size: 14px; }
+  .app-show { padding: 14px 12px; gap: 10px; }
+  .app-show .waid-logo { width: 48px; }
+  .app-show .shot { max-width: 130px; }
+  .p-body h3 { font-size: 19px; margin-bottom: 10px; }
+  .meta { gap: 3px 14px; padding: 9px 14px; font-size: 12.5px; line-height: 1.55; }
+  .role-title { clear: both; margin: 0 0 6px; padding-top: 2px; font-size: 13px; }
+  .roles { gap: 8px; }
+  .roles section { padding: 8px 12px; }
+  .roles h4 { font-size: 13.5px; }
+  .roles ul { font-size: 12.5px; line-height: 1.55; }
+  .roles li { margin: 1px 0; }
+  .facts { margin-top: 10px; }
+  .facts span { padding: 2px 10px; font-size: 12px; }
+  .strength, .career > li, .roles section, .certs li, .gallery li, .skills { break-inside: avoid; }
+  .certs { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .certs li { padding: 12px; }
+  .foot { margin-top: 26px; padding: 12px 0 0; }
+}
